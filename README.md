@@ -1,9 +1,9 @@
 # Comparison of processor speed policies 
 
-## BUILD  : Compile in the folder "finite_case":
+## BUILD  : Compile in the folder "src":
 make
 
-## RUN    : Execute in the folder "finite_case":
+## RUN    : Execute in the folder "src":
 ./prog
 
 ## OUTPUT : Display in the terminal 
