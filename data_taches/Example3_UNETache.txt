@@ -1,0 +1,35 @@
+## CAS EXEMPLE1 article
+## maturity, T ou +Inf
+## speeds processor
+## sample, nombre d’itération
+## Job
+## period
+## offset
+## size
+## deadline
+## probability_deadline
+## sample number
+## Que des entiers sauf arrival rate
+
+maturity 20
+maximal speeds processor 25
+sample 1000
+maximal deadline reduction 5
+
+offset 0
+period 1
+size 3
+deadline 5
+arrival rate 0.4
+
+offset 0
+period 1
+size 6
+deadline 5
+arrival rate 0.2
+
+offset 0
+period 1
+size 2
+deadline 4
+arrival rate 0.2
