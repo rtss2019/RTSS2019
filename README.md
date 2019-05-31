@@ -1,9 +1,9 @@
 # Comparison of processor speed policies 
 
-## BUILD  : Compile in the folder "src"
+## BUILD  : Compile in the folder "src":
 make
 
-## RUN    : Execute in the folder "src"
+## RUN    : Execute in the folder "src":
 ./prog
 
 ## OUTPUT : Display in the terminal 
