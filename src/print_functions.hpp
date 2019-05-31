@@ -2,8 +2,8 @@
 //  print_functions.hpp
 //  finite_case
 //
-//  Created by Stéphan on 02/10/2018.
-//  Copyright © 2018 Stéphan. All rights reserved.
+//  Created by *** on 02/10/2018.
+//  Copyright © 2018 ***. All rights reserved.
 //
 
 #ifndef print_functions_hpp

@@ -2,8 +2,8 @@
 //  Simulation_WCET_LorchMDP.hpp
 //  finite_case
 //
-//  Created by Stéphan on 05/03/2019.
-//  Copyright © 2019 Stéphan. All rights reserved.
+//  Created by *** on 05/03/2019.
+//  Copyright © 2019 ***. All rights reserved.
 //
 
 #ifndef Simulation_WCET_LorchMDP_hpp

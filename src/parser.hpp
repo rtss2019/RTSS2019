@@ -2,8 +2,8 @@
 //  parser.hpp
 //  finite_case
 //
-//  Created by Stéphan on 12/01/2018.
-//  Copyright © 2018 Stéphan. All rights reserved.
+//  Created by *** on 12/01/2018.
+//  Copyright © 2018 ***. All rights reserved.
 //
 
 #ifndef parser_hpp
