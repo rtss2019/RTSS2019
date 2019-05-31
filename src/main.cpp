@@ -2,8 +2,8 @@
 //  main.cpp
 //  finite_case
 //
-//  Created by Stéphan on 02/05/2017.
-//  Copyright © 2017 Stéphan. All rights reserved.
+//  Created by *** on 02/05/2017.
+//  Copyright © 2017 ***. All rights reserved.
 //
 
 #include <iostream>

@@ -2,8 +2,8 @@
 //  WCET_Lorch_MDP.cpp
 //  finite_case
 //
-//  Created by Stéphan on 05/02/2019.
-//  Copyright © 2019 Stéphan. All rights reserved.
+//  Created by *** on 05/02/2019.
+//  Copyright © 2019 ***. All rights reserved.
 //
 
 //#include "backward_resolution.hpp"

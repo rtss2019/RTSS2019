@@ -2,8 +2,8 @@
 //  simulation_policyApplication.cpp
 //  finite_case
 //
-//  Created by Stéphan on 02/10/2018.
-//  Copyright © 2018 Stéphan. All rights reserved.
+//  Created by *** on 02/10/2018.
+//  Copyright © 2018 ***. All rights reserved.
 //
 
 #include "simulation_policyApplication.hpp"
