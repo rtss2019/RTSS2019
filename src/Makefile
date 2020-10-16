@@ -8,7 +8,7 @@ OBJ=$(SRC:%.cpp=%.o)
 all: $(OBJ)
 	$(CXX) -o $(BIN) $^
 ifndef TEST_CLANG
-	@echo "Install clang++"
+	@echo "Please install clang++"
 endif
 
 %.o: %.c
