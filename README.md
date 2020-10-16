@@ -1,5 +1,7 @@
 # Comparison of processor speed policies 
 
+# Required: clang++, c++17
+
 ## Go to folder "src"
 cd src
 
