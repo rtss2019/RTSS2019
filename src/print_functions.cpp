@@ -8,6 +8,7 @@
 
 #include "print_functions.hpp"
 #include <cmath>
+#include <algorithm>
 
 vector<double> int_conf(vector<vector<double> > sortie_gen_DP, double somme, double sommeEcartType) {
         vector<double> sortie;

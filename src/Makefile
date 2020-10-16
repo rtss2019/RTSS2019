@@ -1,5 +1,5 @@
 CXX=clang++
-CXXFLAGS=-g -std=c++11
+CXXFLAGS=-g -std=c++1z
 BIN=prog
 
 SRC=$(wildcard *.cpp)

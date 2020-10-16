@@ -91,7 +91,7 @@ unsigned int next_fig(unsigned int first_indice, char *line){
 /*!
  *  \brief tableau qui contient notre fichier
  */
-static char** data;
+static char** datatabular;
 /*!
  * \brief le nombre de ligne du fichier
  */
@@ -121,13 +121,13 @@ HashParam init_hash_map (const char *s){
                         fichier.clear();
                         fichier.seekg(0, ios::beg);
                         
-                        data = new char*[i];
+                        datatabular = new char*[i];
                         size_t size;
                         j = 0;
                         while (getline(fichier,ligne)) {
                                 size = ligne.size() + 2;
-                                data[j] = new char[ size ];
-                                strncpy( data[j], ligne.c_str(), size );
+                                datatabular[j] = new char[ size ];
+                                strncpy( datatabular[j], ligne.c_str(), size );
                                 j++;
                         }
                 } else {
@@ -137,34 +137,34 @@ HashParam init_hash_map (const char *s){
                 // Partie
                 i = 0;
                 while (i<n){
-                        if (strncmp (data[i], "##", 1) != 0 && strncmp (data[i], "", 1) != 0) {
-                                //                                cout << data[i] << endl;
-                                int first_fig = next_fig(0,data[i]);
-                                unsigned int skip = skip_space_reverse(first_fig-2, data[i]);
-                                int test = atoi (data[i] + first_fig -1);
-                                if (strncmp (data[i],"maturity", skip) == 0) {
+                        if (strncmp (datatabular[i], "##", 1) != 0 && strncmp (datatabular[i], "", 1) != 0) {
+                                //                                cout << datatabular[i] << endl;
+                                int first_fig = next_fig(0,datatabular[i]);
+                                unsigned int skip = skip_space_reverse(first_fig-2, datatabular[i]);
+                                int test = atoi (datatabular[i] + first_fig -1);
+                                if (strncmp (datatabular[i],"maturity", skip) == 0) {
                                         Prov_maturity = test;
-                                } else if (strncmp (data[i],"maximal speeds processor", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"maximal speeds processor", skip) == 0) {
                                         Prov_maximal_speeds = test;
-                                } else if (strncmp (data[i],"sample", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"sample", skip) == 0) {
                                         Prov_sample = test;
-                                } else if (strncmp (data[i],"maximal deadline reduction", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"maximal deadline reduction", skip) == 0) {
                                         Prov_reduction = test;
-                                } else if (strncmp (data[i],"offset", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"offset", skip) == 0) {
                                         Prov_offset.push_back(test);
-                                } else if (strncmp (data[i],"period", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"period", skip) == 0) {
                                         Prov_period.push_back(test);
-                                } else if (strncmp (data[i],"size", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"size", skip) == 0) {
                                         Prov_size.push_back(test);
-                                } else if (strncmp (data[i],"deadline", skip) == 0) {
+                                } else if (strncmp (datatabular[i],"deadline", skip) == 0) {
                                         Prov_deadline.push_back(test);
-                                } else if (strncmp (data[i],"arrival rate", skip) == 0) {
-                                        double test1 = atof (data[i] + first_fig-1);
+                                } else if (strncmp (datatabular[i],"arrival rate", skip) == 0) {
+                                        double test1 = atof (datatabular[i] + first_fig-1);
                                         Prov_arrival_rate.push_back(test1);
                                 }
                                 if (type.size()<9) {
                                         char* key2 = new char [skip+1];
-                                        strncpy(key2, data[i], skip+1);
+                                        strncpy(key2, datatabular[i], skip+1);
                                         key2[skip]='\0';
                                         type.push_back(key2);
                                 }
@@ -237,6 +237,6 @@ void destruction(type_def T){
 void destruction_hashparam(HashParam M) {
         for_each(M.begin(), M.end(), destruction);
         for (unsigned int i = 0; i<n; i++ )
-                delete [] data[i];
-        delete [] data;
+                delete [] datatabular[i];
+        delete [] datatabular;
 }

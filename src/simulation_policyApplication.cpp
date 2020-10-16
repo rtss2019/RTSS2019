@@ -10,6 +10,7 @@
 #include "output_R.hpp"
 
 #include <cmath>
+#include <algorithm>
 
 // Calcul de la valeur de OA à partir de ETaches_courant
 int Calcul_vitesse_OA_ETaches(map<int, vector<int> >  & ETaches_courant,vector<int> & vitesse_OA) {
