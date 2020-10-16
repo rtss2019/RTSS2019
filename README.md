@@ -1,5 +1,8 @@
 # Comparison of processor speed policies 
 
+## Go to folder "src"
+cd src
+
 ## BUILD  : Compile in the folder "src":
 make
 
